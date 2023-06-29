@@ -1,19 +1,24 @@
-.body {
-    background-color: #0c2461;
-}
-
 .container {
     height: 90vh;
-    background-color: #0c2461;
+    width: 100vw;
+    background: url('../../public/bg.jpg');
+    background-size: cover;
+    overflow: auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container>blockquote {
-    height: 10vh;
+    height: 30%;
+    width: 25%;
     box-sizing: border-box;
     position: relative;
-    background-color: #B33771;
+    background-color: rgba(51, 255, 189, 0.3);
+    border: 2px solid rgba(51, 255, 189);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0.5rem;
     align-items: center;
@@ -25,9 +30,10 @@
 }
 
 .right-align {
-    justify-self: flex-end;
-    align-self: flex-end;
+    position: absolute;
     cursor: pointer;
     text-decoration-style: none;
     color: black;
+    right: 1rem;
+    bottom: 1rem;
 }

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import {
   ApolloClient,
@@ -12,10 +12,10 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: 'https://sonatation.onrender.com/graphql',
   cache: new InMemoryCache(),
-  headers:{
-    authorization:localStorage.getItem("token") || ""
+  headers: {
+    authorization: localStorage.getItem("token") || ""
   }
 });
 
@@ -25,9 +25,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <ApolloProvider client={client}>
-        <NavBar/>
-         <App />
-      </ApolloProvider>  
+        <NavBar />
+        <App />
+      </ApolloProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,7 +1,7 @@
 .nav-wrapper {
     height: 8vh;
     width: 100vw;
-    background-color: #079992;
+    background-color: #B33771;
     display: flex;
     position: relative;
     align-items: center;
@@ -12,8 +12,22 @@
     display: flex;
     justify-content: flex-end;
     width: 80%;
+    text-decoration: none;
 }
-.right>li{
+
+.rightli {
     margin-left: 2rem;
     list-style: none;
+    color: #F8EFBA;
+}
+.rightli>span:visited {
+    text-decoration: none;
+}
+
+.rightli>span:hover {
+    text-decoration: none;
+}
+
+.rightli>span:active {
+    text-decoration: none;
 }
