@@ -1,0 +1,19 @@
+.nav-wrapper {
+    height: 8vh;
+    width: 100vw;
+    background-color: #079992;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.right {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+.right>li{
+    margin-left: 2rem;
+    list-style: none;
+}
